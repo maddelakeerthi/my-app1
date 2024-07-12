@@ -1,0 +1,15 @@
+<p>registration works!</p>
+<div class="parent">
+<div class="child">
+        <h1>Registration</h1>
+        <label for="name">Name:</label>
+        <input type="text" [(ngModel)]="name">
+        <br>
+        <br>
+        <button (click)="register()">Register</button>
+    
+        <button (click)="clear()">clear</button>
+
+        <h1 *ngFor="let name of names">{{name}}</h1>
+    </div>
+</div>
