@@ -10,6 +10,11 @@ import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountComponent } from './account/account.component';
+import { Flipkart2Component } from './flipkart2/flipkart2.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -21,7 +26,12 @@ const routes: Routes = [
     {path:'directives',component:DirectivesComponent},
     {path:'pipes',component:PipesComponent},
     {path:'registration',component:RegistrationComponent},
-    {path:'cart',component:CartComponent}
+    {path:'cart',component:CartComponent},
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'vehicle',component:VehicleComponent},
+    {path:'account',component:AccountComponent},
+    {path:'flipkart2',component:Flipkart2Component},
+    {path:'create-vehicle',component:CreateVehicleComponent}
   ]},
   {path:'',component:LoginComponent}
 ];

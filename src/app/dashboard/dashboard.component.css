@@ -1,31 +1,27 @@
 .parent{
+    background-color: mediumvioletred;
     height: 100vh;
-    width: 100vw;
-    background-color:rgb(92, 83, 148);
+    width: 100wh;
     display: flex;
-    overflow: auto;
 }
 .left{
-    width: 20%;
-    height: 100%;
     background-color: black;
     color: white;
+    width: 20%;
+    height: 100%;
     text-align: center;
-    :hover{
-        background-color: rgb(125, 127, 127);
-        overflow: auto;
-
+    cursor: pointer;
+    overflow: auto;
+    :hover{background-color: lightgreen};
     }
+.right{
+    width: 80%;
+    height: 100%;
+    background-color:beige;
+    overflow: auto;
 }
-button{
-    color: white;
-    height: 40px;
-    width: 298px;
+ button{
     background-color: red;
 }
-/* .right{
-    /* height: 100%; */
-    /* width: 80%;
-    background-color:rgb(92, 83, 148); */
-/* } */
+
 
