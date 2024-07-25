@@ -54,6 +54,10 @@
                 <img src="{{account.profie_picture}}" alt="">
             </td>
             <td>{{account.id}}</td>
+            <td>
+                <button (click)="delete(account.id)">delete</button>
+            </td>
         </tr>
     </tbody>
 </table>
+

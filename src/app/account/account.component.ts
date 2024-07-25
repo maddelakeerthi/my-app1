@@ -57,7 +57,17 @@ export class AccountComponent implements OnInit {
     (err:any)=>{
      alert("Internal error")
     }
-  )
+  )                                       
+}
+delete(id:string){
+ this._accountService.deleteAccount(id).subscribe(
+  (data:any)=>{
+    alert("Deleted successfully")
+  },
+  (err:any)=>{
+    alert("Internal error")
+  }
+ )
 }
 
 }

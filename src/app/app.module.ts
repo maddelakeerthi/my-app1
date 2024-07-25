@@ -21,6 +21,9 @@ import { AccountComponent } from './account/account.component';
 import { Flipkart2Component } from './flipkart2/flipkart2.component';
 import { MailComponent } from './mail/mail.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { IdCardComponent } from './id-card/id-card.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
     Flipkart2Component,
     MailComponent,
     CreateVehicleComponent,
+    CreateAccountComponent,
+    IdCardComponent,
+    VehicleDetailsComponent,
 
   ],
   imports: [

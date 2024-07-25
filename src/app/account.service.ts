@@ -19,6 +19,12 @@ export class AccountService {
     return this._httpclient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/principals?sortBy="+column+"&order="+order)
   }
   getPagedAccount(limit:number,page:number):Observable<any>{
-   return this._httpclient.get("https://                                                                        6128991386a213001729f9df.mockapi.io/test/v1/principals?Limit="+limit+"&page="+page);
+   return this._httpclient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/principals?Limit="+limit+"&page="+page);
+  }
+  deleteAccount(id:string):Observable<any>{
+  return this._httpclient.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/principals/"+id)
+  }
+  createAccount(data:any):Observable<any>{
+    return this._httpclient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/principals",data)
   }
 }
