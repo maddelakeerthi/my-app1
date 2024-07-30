@@ -1,0 +1,13 @@
+<p>parent works!</p>
+<input type="text" [(ngModel)]="ap">
+<p>B is parent:{{bp}}</p>
+
+
+<div class="box">
+    <app-child [ac]="ap" (bEvent)="catch($event)"></app-child>
+</div>
+
+
+<div class="sibling">
+
+</div>

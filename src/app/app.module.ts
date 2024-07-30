@@ -24,6 +24,12 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { IdCardComponent } from './id-card/id-card.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Calculator2Component } from './calculator2/calculator2.component';
+import { OperationComponent } from './operation/operation.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +53,12 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreateAccountComponent,
     IdCardComponent,
     VehicleDetailsComponent,
+    AccountDetailsComponent,
+    CreateUserComponent,
+    ParentComponent,
+    ChildComponent,
+    Calculator2Component,
+    OperationComponent,
 
   ],
   imports: [

@@ -17,10 +17,13 @@ import { Flipkart2Component } from './flipkart2/flipkart2.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard', canActivate:[AuthenticationGuard], component:DashboardComponent,children:[
     {path:'data-binding',component:DataBindingComponent},
     {path:'calculator',component:CalculatorComponent},
     {path:'rectangle',component:RectangleComponent},
@@ -35,7 +38,10 @@ const routes: Routes = [
     {path:'flipkart2',component:Flipkart2Component},
     {path:'create-vehicle',component:CreateVehicleComponent},
     {path:'create-account',component:CreateAccountComponent},
-    {path:'vehicle-details/:id',component:VehicleDetailsComponent}
+    {path:'account-details/:id',component:AccountDetailsComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path:'parent',component:ParentComponent}
   ]},
   {path:'',component:LoginComponent}
 ];
