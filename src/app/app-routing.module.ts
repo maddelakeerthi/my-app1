@@ -20,6 +20,7 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { ParentComponent } from './parent/parent.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -41,7 +42,7 @@ const routes: Routes = [
     {path:'account-details/:id',component:AccountDetailsComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
-    {path:'parent',component:ParentComponent}
+    {path:'parent',component:ParentComponent},
   ]},
   {path:'',component:LoginComponent}
 ];

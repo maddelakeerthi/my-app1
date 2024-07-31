@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Calculator2Component implements OnInit {
 
+  public ap:number=0;
+  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -30,6 +30,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { Calculator2Component } from './calculator2/calculator2.component';
 import { OperationComponent } from './operation/operation.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { OperationComponent } from './operation/operation.component';
     ChildComponent,
     Calculator2Component,
     OperationComponent,
+    Sibling1Component,
+    Sibling2Component,
 
   ],
   imports: [
