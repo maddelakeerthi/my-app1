@@ -21,6 +21,7 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
 import { AuthenticationGuard } from './authentication.guard';
 import { ParentComponent } from './parent/parent.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -43,6 +44,12 @@ const routes: Routes = [
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'parent',component:ParentComponent},
+    {path:'about-company',component:AboutCompanyComponent},
+    //{path :'payment',import payment module}
+    {
+      path: 'payments',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    }
   ]},
   {path:'',component:LoginComponent}
 ];
